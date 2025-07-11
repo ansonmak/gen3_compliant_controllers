@@ -34,6 +34,7 @@
   	output="screen"
   	args="
     	joint_state_controller
+      gripper_position_controller
   	" />
   <group if="$(eval controller_type == 'joint')">
     <node name="compliant_controller_spawner_started" pkg="controller_manager" type="spawner" respawn="false"
