@@ -1,3 +1,20 @@
+# Launch CMD for testing
+## Start gen3_compliant_controllers
+```
+roslaunch gen3_compliant_controllers controller.launch ip_address:=192.168.1.10 dof:=7 controller_type:=task
+```
+## Run test scripts
+Send single target position 
+```
+rosrun gen3_compliant_controllers test_controllers.py task
+```
+
+Or pose servo control with PSP4 controller
+```
+rosrun gen3_compliant_controllers teleop_task_cpl.py
+```
+## 
+
 # Kinova Gen3 Compliant Controllers
 ![build](https://github.com/empriselab/gen3_compliant_controllers/actions/workflows/build-test.yml/badge.svg)
 
